@@ -1,21 +1,26 @@
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-  }
-.videl{
-    color: red;
-    background-color: #e7e7e7;
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
 }
-.code{
- background-color: #e7e7e7;
- font-size: large;   
+
+ol{
+  background-color: #ed9eae;
+  color: white;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.text2{
-    background-color: #e7e7e7;
-    color: rgb(31, 148, 226);
+
+ol li{
+  background-color: #c66376;
+  margin: 10px;
+  padding: 10px;
+
 }
-.header{
-    text-align: center;
-}
-.zag{
-    text-align: center;
+
+.text{
+background-color: #9e354a;
+color: white;
+
 }
