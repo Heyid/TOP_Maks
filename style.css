@@ -1,26 +1,36 @@
+
+
+
 body{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 20px;
-}
-
-ol{
-  background-color: #ed9eae;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  }
+  
+  ol{
+    background-color: #ed9eae;
+    color: white;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+  }
+  
+  ol li{
+    background-color: #c66376;
+    margin: 10px;
+    padding: 10px;
+    counter-increment: my-counter;
+  }
+  
+  ol li::before {
+    content: counter(my-counter) ". ";
+    padding-left: 5px;
+  }
+  
+  
+  .text{
+  background-color: #9e354a;
   color: white;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-ol li{
-  background-color: #c66376;
-  margin: 10px;
-  padding: 10px;
-
-}
-
-.text{
-background-color: #9e354a;
-color: white;
-
-}
+  
+  } 
