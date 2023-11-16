@@ -1,36 +1,54 @@
-
-
-
 body{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+  
   }
-  
-  ol{
-    background-color: #ed9eae;
-    color: white;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    list-style: none;
-  }
-  
-  ol li{
-    background-color: #c66376;
-    margin: 10px;
-    padding: 10px;
-    counter-increment: my-counter;
-  }
-  
-  ol li::before {
-    content: counter(my-counter) ". ";
-    padding-left: 5px;
-  }
-  
-  
-  .text{
-  background-color: #9e354a;
-  color: white;
-  
-  } 
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+h1{
+
+margin: 10px;
+
+}
+
+
+ol{
+  list-style: inside;
+  list-style-image: url(/img/unchecked_16.png);
+  counter-reset: count;
+  padding-left: 10px;
+  width: 800px;
+
+}
+
+li{
+  padding: 10px;
+  padding-left: 60px;
+}
+
+ol li::before{
+  padding-left: 5px;
+
+}
+
+ol li.grey{
+  list-style-image: url(/img/checked_16.png);
+}
+.dark_blue{
+background-color: #a5ccda;
+
+}
+
+.blue{
+  background-color: #add8e6;
+}
+
+.grey{
+  background-color: #e2e2e2;
+}
+
