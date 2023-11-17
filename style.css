@@ -1,35 +1,32 @@
 *{
   margin: 0;
-  pad: 0;
+  padding: 0;
 }
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:medium;
-  font-weight: 800;
+
+ul{
+  list-style: none;
 }
-.container{
+
+.image{
+  width: 60px;
+}
+
+.descr{
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+}
 
-  flex-direction: row;
+.glav{
+  margin: 15px;
+  width: 200px;
+  background-color:rgb(153, 152, 152);
+}
 
+.text1{
+color:white;
 
 }
 
-.cards{
-
-  border: 1px solid;
-  border-radius: 20px;
-  margin: 20px;
-  padding: 20px;
-  
-}
-
-.caption2{
-  text-align: center;
-  
-}
-.caption1{
-  margin-top: 20px;
-  text-align: center;
+.descr:hover{
+  background-color:rgb(95, 95, 95);
 }
