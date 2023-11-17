@@ -1,33 +1,35 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  
-  }
-
 *{
   margin: 0;
-  padding: 0;
+  pad: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:medium;
+  font-weight: 800;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: row;
+
+
 }
 
-.term{
-  color: grey;
-}
-dd{
-  margin-left: 10px;
-  padding-left: 150px;
-}
+.cards{
 
-dt{
-  padding-bottom: 10px;
-  padding-left: 15px;
-
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  
 }
 
-dl{
+.caption2{
+  text-align: center;
+  
+}
+.caption1{
   margin-top: 20px;
-  margin-left: 5px;
-}
-
-.syn{
-  color: #4244ad;
+  text-align: center;
 }
