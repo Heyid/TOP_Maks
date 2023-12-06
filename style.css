@@ -3,40 +3,30 @@
   padding: 0;
 }
 
-.container1{
-  background-color: #1F98F0;
-  height: 958px;
-  width: 100%;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-  padding-left: 50px;
-}
-li {
-  padding-right: 10px;
-  padding-top: 50px;
-}
-h1{
-
-  color: white;
-  margin-left: 230px;
-}
-.menu{
-  display: flex;
+ul{
   list-style: none;
-    
-}
-.logo{
-  padding-right: 57px;
-  padding-top: 40px;
 }
 
-.button1{
-  margin-left: 373px;
-  border-radius: 10px;
-  color: black;
-  background-color: white;
+.image{
+  width: 60px;
 }
 
+.descr{
+  display: flex;
+  align-items: center;
+}
+
+.glav{
+  margin: 15px;
+  width: 200px;
+  background-color:rgb(153, 152, 152);
+}
+
+.text1{
+color:white;
+
+}
+
+.descr:hover{
+  background-color:rgb(95, 95, 95);
+}
