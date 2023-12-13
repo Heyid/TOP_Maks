@@ -42,15 +42,15 @@ const speed = (rasst, vremya) => {
         let sspeed = Number(rasst) / Number(vremya);
         alert("Вам нужно ехать со скоростью: " + sspeed);
 
-}
+    }
     else {
-    alert("Вы ввели данные неправильно");
-}
+        alert("Вы ввели данные неправильно");
+    }
 }
 
 const converter = (dollars) => {
     if (dollars != null) {
-        const euro = 0.927149* dollars;
+        const euro = 0.927149 * dollars;
         alert("Ваша сумма в евро: " + euro.toFixed(2));
     } else {
         alert("Вы неправильно ввели сумму:");
@@ -63,15 +63,15 @@ const memory = (gb) => {
         let files = mb / 820;
         alert("Поместится " + Math.floor(files) + " файл(ов)");
     }
-    else{
+    else {
         alert("Данные не введены :(");
     }
 }
 
-const chocolate = (money,price) => {
+const chocolate = (money, price) => {
     if (money != null & price != null) {
         let count = money / price;
-        let sdacha = money - (price * count);
+        let sdacha = money % price;
         alert("Вам хватит на " + Math.floor(count) + " штук");
         alert("У вас останется " + sdacha + " рублей");
     } else {
@@ -79,9 +79,26 @@ const chocolate = (money,price) => {
     }
 }
 
-let money = prompt("Введите сумму денег");
-let price = prompt("Введите цену шоколадки");
-chocolate(money,price);
+const reverse = (numer) => {
+    if (numer != null & numer.length == 3) {
+        alert("Ваше число в реверсе: " + numer.split('').reverse().join(''));
+    } else {
+        alert("Данные введены неправильно :(");
+    }
+}
+
+const isOdd = (num) => {
+    if (num != null) {
+        if (num % 2 == 0) {
+            alert("Число четное");
+
+        } else {
+            alert("Число нечетное ");
+        }
+    } else {
+        alert('Данные не введены :(')
+    }
+}
 
 
 
@@ -100,3 +117,10 @@ let dollars = prompt("Введите сумму в долларах:")
 converter(dollars)
 let gbs = prompt("Введите объем флэшки в ГБ");
 memory(gbs);
+let money = prompt("Введите сумму денег");
+let price = prompt("Введите цену шоколадки");
+chocolate(money, price);
+let numer = prompt("Введите трехзначное число:");
+reverse(numer);
+let num = prompt("Введите число");
+isOdd(num);
