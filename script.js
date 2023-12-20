@@ -1,102 +1,128 @@
-const user_name = (user) => {
-    if (user != null) {
-        alert("Привет," + user);
-    }
-    else {
-        alert("Вы не ввели имя :(");
+// const one = (age) => {
+//     if (age != null) {
+//         if (age <= 2) {
+//             alert('Ребенок');
+//         } else if (2 < age && age <= 18) {
+//             alert("Подросток");
+//         } else if (age <= 60 && age > 18) {
+//             alert('Взрослый');
 
-    }
-}
-
-const age = (age) => {
-    const year = 2023;
-    if (age != null) {
-        let user_age = year - Number(age);
-        alert("Ваш возраст:" + user_age);
-    }
-    else {
-        alert("Вы не ввели год рождения :(");
-    }
-}
-
-const perimetr = (dlina) => {
-    if (dlina != null) {
-        let perim = Number(dlina) * 4;
-        alert("Периметр вашего квадрата равен: " + perim);
-    } else {
-        alert("Вы не ввели длину :(");
-    }
-}
-
-const Socr = (radius) => {
-    if (radius != null) {
-        let ploshad = 3.14 * Number(radius) ** 2;
-        alert("Площадь вашей окружности равна: " + ploshad);
-    }
-    else {
-        alert("Вы не ввели радиус :(");
-    }
-}
-const speed = (rasst, vremya) => {
-    if (rasst != null && (vremya != null)) {
-        let sspeed = Number(rasst) / Number(vremya);
-        alert("Вам нужно ехать со скоростью: " + sspeed);
-
-}
-    else {
-    alert("Вы ввели данные неправильно");
-}
-}
-
-const converter = (dollars) => {
-    if (dollars != null) {
-        const euro = 0.927149* dollars;
-        alert("Ваша сумма в евро: " + euro.toFixed(2));
-    } else {
-        alert("Вы неправильно ввели сумму:");
-    }
-}
-
-const memory = (gb) => {
-    if (gb != null) {
-        mb = Number(gb) * 1024;
-        let files = mb / 820;
-        alert("Поместится " + Math.floor(files) + " файл(ов)");
-    }
-    else{
-        alert("Данные не введены :(");
-    }
-}
-
-const chocolate = (money,price) => {
-    if (money != null & price != null) {
-        let count = money / price;
-        let sdacha = money - (price * count);
-        alert("Вам хватит на " + Math.floor(count) + " штук");
-        alert("У вас останется " + sdacha + " рублей");
-    } else {
-        alert("Данные не введены :(");
-    }
-}
-
-let money = prompt("Введите сумму денег");
-let price = prompt("Введите цену шоколадки");
-chocolate(money,price);
+//         } else if (age > 60) {
+//             alert("Пенсионер");
+//         }
+//     } else {
+//         alert('Данные не введены')
+//     }
+// }
+// let age = +prompt('Введите возвраст');
+// one(age);
 
 
+// const two = (number) => {
+//     if (number != null) {
+//         switch (number) {
+//             case 0:
+//                 alert(`!`);
+//                 break;
+//             case 1:
+//                 alert(`@`);
+//                 break;
+//             case 2:
+//                 alert(`#`);
+//                 break;
+//             case 3:
+//                 alert(`$`);
+//                 break;
+//             case 4:
+//                 alert(`%`);
+//                 break;
+//             case 5:
+//                 alert(`^`);
+//                 break;
+//             case 6:
+//                 alert(`&`);
+//                 break;
+//             case 7:
+//                 alert(`*`);
+//                 break;
+//             case 8:
+//                 alert(`(`);
+//                 break;
+//             case 9:
+//                 alert(`)`);
+//                 break;
+//         }
+//     } else {
+//         alert(`Данные не введены`)
+//     }
 
-let user = prompt("Как вас зовут?");
-user_name(user);
-let yearBirth = prompt("Какой у вас год рождения?");
-age(yearBirth);
-let dlina = prompt("Введите длину стороны квадрата:");
-perimetr(dlina);
-let rad = prompt("Введите ваш радиус окружности: ");
-Socr(rad);
-let rasst = prompt("Введите расстояние в км между 2-мя городами:");
-let vremya = prompt("За сколько часов хотите добраться?");
-speed(rasst, vremya);
-let dollars = prompt("Введите сумму в долларах:")
-converter(dollars)
-let gbs = prompt("Введите объем флэшки в ГБ");
-memory(gbs);
+// }
+
+// let num =+prompt(`Введите число от 0-9`);
+// two(num);
+
+// const three = (number) => {
+//     if (number != null) {
+//         let ans = false;
+//         if (number[0] == number[2]){
+//             ans = true;
+//         }else if (number[0]==number[1]){
+//             ans = true;
+//         }else if (number[1]==number[2]){
+//             ans = true;
+//         }
+//         if (ans==true){
+//             alert(`У вас есть одинковые цифры`);
+//         }else{
+//             alert(`У вас нет одинаковых цифр`);
+//         }
+//     } else {
+//         alert(`Данные не введены`)
+//     }
+// }
+
+// let num3= prompt(`Введите 3-х значное число`);
+// three(num3);
+
+
+// const four = (year) => {
+//     if ((year % 400 == 0 || year % 4 == 0) && year % 100 != 0) {
+//         alert(`Год високосный`);
+//     }else{
+//         alert(`Год не високосный`);
+//     }
+// }
+
+// let year = prompt(`Введите год`);
+// four(year);
+
+// const five = (number) => {
+//     let rev_number = number.split('').reverse().join('');
+//     if (number == rev_number) {
+//         alert(`Палиндром`);
+
+//     } else {
+//         alert(`Не палиндром`);
+//     }
+// }
+// let num5 = prompt(`Введите 5-ти значное число`);
+// five(num5);
+
+// const six = (dollars, value) => {
+//     if (value == 'EUR') {
+//         let eur = 1.09 * dollars;
+//         alert(`${eur} евро`)
+//     } else if (value == 'UAN') {
+//         let uan = 7.16 * dollars;
+//         alert(`${uan} юаней`)
+//     } else {
+//         let azn = 1.70 * dollars;
+//         alert(`${azn} Азрбайджанских манат`)
+//     }
+// }
+
+
+// let dollars = +prompt(`Введите кол-во USD`);
+// let value = prompt(`Выберите валюту "UAN" , "EUR" , "AZN" `).toUpperCase();
+// six(dollars, value);
+
